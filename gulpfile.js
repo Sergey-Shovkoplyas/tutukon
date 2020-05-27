@@ -15,6 +15,7 @@ function styles () {
 	.pipe(sourceMaps.init())
 	.pipe(sass().on('error', notify.onError()))
 	.pipe(rename({ suffix: '.min'}))
+	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(sourceMaps.write())
 	.pipe(dest('app/css'))
 	.pipe(browserSync.stream());
@@ -34,7 +35,6 @@ function serve () {
 function dist () {
 	return src('app/css/main.min.css')
 	.pipe(gcmq())
-	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(cleanCSS())
 	.pipe(dest('app/css'))
 	.pipe(browserSync.stream());
