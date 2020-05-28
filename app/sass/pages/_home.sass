@@ -224,7 +224,7 @@
   width: 166px 
   height: 166px 
   border-radius: 50% 
-  border: 1px solid #082A58
+  // border: 1px solid #082A58
   margin-bottom: 24px
   &.item-1
     background: url('../img/target-item-1.png') no-repeat center
@@ -237,10 +237,33 @@
     background-color: #fff
 
 .target__item-round
+  position: relative
   width: 146px 
   height: 146px 
   border-radius: 50% 
   border: 3px solid #082A58
+  &::before,
+  &::after
+    position: absolute
+    top: 50%
+    content: ''
+    width: 10px 
+    height: 10px
+    border-radius: 50%
+    background-color: #082A58
+  &::before
+    left: -6px
+  &::after
+    right: -6px
+
+.target__item-round-thin
+  position: absolute
+  z-index: -1
+  width: 166px 
+  height: 166px 
+  border-radius: 50% 
+  border: 1px solid #082A58
+
 
 .target__item-title
   text-align: center
@@ -294,6 +317,7 @@
   text-align: left
 
 .effect__arrow-wrap
+  overflow: hidden
   width: 185px
   img 
     width: 100%
@@ -308,13 +332,35 @@
   width: 166px 
   height: 166px 
   border-radius: 50% 
-  border: 1px solid #082A58
+  // border: 1px solid #082A58
+
+  .target__counter-thin
+    position: absolute
+    z-index: -1
+    width: 166px 
+    height: 166px 
+    border-radius: 50% 
+    border: 1px solid #082A58
 
 .target__counter-round
+  position: relative
   width: 146px 
   height: 146px 
   border-radius: 50% 
   border: 3px solid #082A58
+  &::before,
+  &::after
+    position: absolute
+    top: 50%
+    content: ''
+    width: 10px 
+    height: 10px
+    border-radius: 50%
+    background-color: #082A58
+  &::before
+    left: -6px
+  &::after
+    right: -6px
 
 .target__counter-number
   position: absolute

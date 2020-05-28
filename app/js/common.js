@@ -1,11 +1,16 @@
-window.onload = function () {
-	
-	console.log('js is working!!!'); 
 
-}
+$( document ).ready(function() {
 
-/* $( document ).ready(function() {
+	new WOW().init();
 
-	console.log( 'JQuery!!!' );
+	// ------------------ counter -------------------------
+	// let i = 1;
+	// setInterval(() => {
+	// 	console.log(i);
+	// 	i++;
+	// 	if (i > 8) {
+	// 		clearInterval();
+	// 	}
+	// }, 200);
 
-}); */
+});

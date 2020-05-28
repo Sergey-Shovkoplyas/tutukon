@@ -21,6 +21,7 @@
 
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -62,8 +63,8 @@
 					</div>
 					<div class="header__title-3">Сучасний комплексний рослинний препарат</div>
 					<div class="header__buttons">
-						<div class="header__btn"><a href="#" class="button">Де придбати</a></div>
-						<div class="header__btn"><a href="#" class="button">Консультація з лікарем</a></div>
+						<div class="header__btn wow zoomIn"><a href="#" class="button">Де придбати</a></div>
+						<div class="header__btn wow zoomIn" data-wow-delay="0.5s"><a href="#" class="button">Консультація з лікарем</a></div>
 					</div>
 				</div>
 			</div>
@@ -72,15 +73,15 @@
 
 	<section class="target">
 		<div class="container">
-			<div class="section-title">
+			<div class="section-title wow fadeInDown" data-wow-delay="2s">
 				<img src="img/logo.svg" alt="Тутукон"> - НОВИЙ ПІДХІД В ЛІКУВАННІ ТА ПРОФІЛАКТИЦІ Сечокам’яної хвороби  та інфекцій сечовивідних шляхів
 			</div>
 			<div class="target__subtitle">Допоможе впоратися з такими проблемами:</div>
 			<div class="target__center">
-				<div class="target__img">
+				<div class="target__img  wow zoomIn">
 					<img src="img/target-center.png" alt="Тутукон">
 				</div>
-				<div class="target__block">
+				<div class="target__block wow zoomInRight" data-wow-duration="2s" data-wow-delay="2s">
 					<img src="img/target-block.png" alt="Тутукон">
 				</div>
 				<ul class="target__list target__list-left">
@@ -102,7 +103,8 @@
 			<div class="target__row">
 				<div class="target__item">
 					<div class="target__item-img item-1">
-						<div class="target__item-round"></div>
+						<div class="target__item-round-thin wow zoomIn" data-wow-duration="2s"></div>
+						<div class="target__item-round wow rotateIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="target__item-title">ДОВЕДЕНА ЕФЕКТИВНІСТЬ:</div>
 					<div class="target__item-text">рецептура винайдена
@@ -110,7 +112,8 @@
 				</div>
 				<div class="target__item">
 					<div class="target__item-img item-2">
-						<div class="target__item-round"></div>
+						<div class="target__item-round-thin wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s"></div>
+						<div class="target__item-round wow rotateIn" data-wow-duration="2s" data-wow-delay="0.5s"></div>
 					</div>
 					<div class="target__item-title">УНІКАЛЬНА ТЕХНОЛОГІЯ:</div>
 					<div class="target__item-text">забезпечує максимальну концентрацію
@@ -118,14 +121,15 @@
 				</div>
 				<div class="target__item">
 					<div class="target__item-img  item-3">
-						<div class="target__item-round"></div>
+						<div class="target__item-round-thin wow zoomIn" data-wow-duration="2s" data-wow-delay="1.5s"></div>
+						<div class="target__item-round wow rotateIn" data-wow-duration="2s" data-wow-delay="1.5s"></div>
 					</div>
 					<div class="target__item-title">УНІКАЛЬНА ФОРМА ВИПУСКУ:</div>
 					<div class="target__item-text">на водній основі, без спирту та цукру.</div>
 					<div class="target__item-mark">Безпечна при діабеті, <br>
 						для дітей та вагітних</div>
 				</div>
-				<div class="target__line"></div>
+				<div class="target__line wow slideInLeft" data-wow-duration="3s"></div>
 			</div>
 		</div>
 	</section>
@@ -138,48 +142,49 @@
 			<img src="img/effect-plant-bottom.png" alt="Тутукон">
 		</div>
 		<div class="container">
-			<div class="section-title">
+			<div class="section-title wow fadeInDown">
 				<img src="img/logo.svg" alt="Тутукон"> - СУЧАСНИЙ ЛІКАРСЬКИЙ ЗАСІБ З НАУКОВО ДОВЕДЕНИМИ ТЕРАПЕВТИЧНИМИ  ЕФЕКТАМИ
 			</div>
 			<div class="effect__top">
 				<div class="effect__top-left">лікарськи	рослин</div>
 				<div class="effect__arrow-wrap">
-					<img src="img/effect-arrow-left.svg" alt="Тутукон">
+					<img src="img/effect-arrow-left.svg" alt="Тутукон" class="wow slideInLeft" data-wow-duration="4s">
 				</div>
 				<div class="effect__top-mid">
 					<div class="target__counter">
-						<div class="target__counter-round"></div>
-						<div class="target__counter-number">8</div>
+						<div class="target__counter-thin wow zoomIn" data-wow-duration="2s"></div>
+						<div class="target__counter-round wow rotateIn" data-wow-duration="2s"></div>
+						<div class="target__counter-number">1</div>
 					</div>
 				</div> 
 				<div class="effect__arrow-wrap">
-					<img src="img/effect-arrow-right.svg" alt="Тутукон">
+					<img src="img/effect-arrow-right.svg" alt="Тутукон" class="wow slideInRight" data-wow-duration="4s">
 				</div>
 				<div class="effect__top-right">ефектів</div>
 			</div>
 			<div class="effect__bottom">
 				<ul class="effect__list left">
-					<li>Хвощ польовий<span></span></li>
-					<li>Торичник червоний<span></span></li>
-					<li>Болдо листя<span></span></li>
-					<li>Опунція інжирова<span></span></li>
-					<li>Залізниця вузьколиста<span></span></li>
-					<li>Розмарин аптечний<span></span></li>
-					<li>Бермудська трава<span></span></li>
-					<li>Меліса аптечна<span></span></li>
+					<li class="wow fadeInLeft">Хвощ польовий<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".5s">Торичник червоний<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".6s">Болдо листя<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".7s">Опунція інжирова<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".8s">Залізниця вузьколиста<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".9s">Розмарин аптечний<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay="1s">Бермудська трава<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay="1.1s">Меліса аптечна<span></span></li>
 				</ul>
 				<div class="effect__bottom-img">
 					<img src="img/effect-img.png" alt="Тутукон">
 				</div>
 				<ul class="effect__list right">
-					<li>Літолітичний<span></span></li>
-					<li>Протизапальний<span></span></li>
-					<li>Діуретичний<span></span></li>
-					<li>Антибактеріальний<span></span></li>
-					<li>Спазмолітичний<span></span></li>
-					<li>Антиоксидантний<span></span></li>
-					<li>Антитоксичний<span></span></li>
-					<li>Нефропротекторний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="0s">Літолітичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".5s">Протизапальний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".6s">Діуретичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".7s">Антибактеріальний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".8s">Спазмолітичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".9s">Антиоксидантний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="1s">Антитоксичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="1.1s">Нефропротекторний<span></span></li>
 
 				</ul>
 			</div>
@@ -188,7 +193,7 @@
 
 	<section class="prevention">
 		<div class="container">
-			<div class="section-title">
+			<div class="section-title wow fadeInDown">
 				<img src="img/logo.svg" alt="Тутукон"> - новий підхід для лікування та профілактики сечокам’яної хвороби та інфекцій сечовивідних шляхів
 			</div>
 			<div class="prevention__top">
@@ -214,18 +219,18 @@
 			<div class="prevention__bottom">
 				<div class="prevention__bottom-left">
 					<div class="target__center">
-						<div class="target__img">
+						<div class="target__img wow zoomIn">
 							<img src="img/target-center.png" alt="Тутукон">
 						</div>
-						<div class="target__block">
+						<div class="target__block wow zoomInRight"  data-wow-duration="2s">
 							<img src="img/target-block.png" alt="Тутукон">
 						</div>
 					</div>
 				</div>
 				<div class="prevention__bottom-right">
-					<div class="prevention__head">
+					<div class="prevention__head wow fadeInRight">
 						<div class="prevention__head-title">Як приймати <img src="img/logo.svg" alt="Тутукон"> ?</div>
-						<div class="prevention__head-btn"><a href="#" class="button">Інструкція</a></div>
+						<div class="prevention__head-btn wow zoomIn" data-wow-delay=".5s"><a href="#" class="button">Інструкція</a></div>
 					</div>
 					<div class="prevention__subtitle">застосовують внутрішньо <b>3 рази</b> на добу <b>за 30 хвилин</b> до вживання їжі</div>
 					<div class="prevention__table">
@@ -260,13 +265,13 @@
 			<img src="img/health-plant.png" alt="Тутукон">
 		</div>
 		<div class="container">
-			<div class="section-title">
+			<div class="section-title  wow fadeInDown">
 				<img src="img/logo.svg" alt="Тутукон"> - ДЛЯ ТИХ, ХТО ПІКЛУЄТЬСЯ ПРО СВОЄ ЗДОРОВ’Я
 			</div>
 			<div class="health__buttons">
-				<div class="health__btn"><button class="button" type="button">Про хворобу</button></div>
-				<div class="health__btn"><button class="button" type="button">Симптомы</button></div>
-				<div class="health__btn active"><button class="button" type="button">Профілактика</button></div>
+				<div class="health__btn  wow zoomIn"><button class="button" type="button">Про хворобу</button></div>
+				<div class="health__btn  wow zoomIn" data-wow-delay="0.5s"><button class="button" type="button">Симптомы</button></div>
+				<div class="health__btn  wow zoomIn active" data-wow-delay="1s"><button class="button" type="button">Профілактика</button></div>
 			</div>
 			<div class="health__item">
 				<div class="health__item-top">
@@ -295,27 +300,27 @@
 
 	<section class="contact">
 		<div class="container">
-			<div class="section-title">Залишилися питання?</div>
+			<div class="section-title  wow fadeInDown">Залишилися питання?</div>
 			<div class="contact__row">
 				<div class="contact__left">
 					<div class="contact__img">
 						<img src="img/header-img.png" alt="Тутукон">
 					</div>
-					<div class="contact__btn">
+					<div class="contact__btn wow zoomIn">
 						<a href="#" class="button">Придбати on-line</a>
 					</div>
 				</div>
-				<div class="contact__right">
+				<div class="contact__right  wow fadeInRight">
 					<div class="contact__title">УНІКАЛЬНА МОЖЛИВІСТЬ БЕЗКОШТОВНО</div>
 					<div class="contact__subtitle">проконсультуватися з лікарем УРОЛОГОМ</div>
 					<div class="contact__form-title">Залиште  контакти і незабаром Вам зателефонує спеціаліст</div>
 					<form action="#" class="contact__form">
 						<div class="contact__form-row">
 							<div class="contact__form-inputs">
-								<input type="text" class="contact__form-item" placeholder="Ваше ім’я">
-								<input type="tel" class="contact__form-item" placeholder="+380 _ _ _ _ _ _ _ _ _">
+								<input type="text" class="contact__form-item wow zoomIn"  placeholder="Ваше ім’я" data-wow-delay="1.5s">
+								<input type="tel" class="contact__form-item wow zoomIn" placeholder="+380 _ _ _ _ _ _ _ _ _" data-wow-delay="1s">
 							</div>
-							<input type="submit" class="button" value="Замовити консультацію">
+							<input type="submit" class="button wow zoomIn" value="Замовити консультацію"  data-wow-delay="0.5s">
 						</div>
 						<div class="contact__form-checkbox-wrap">
 							<input id="check-agree" type="checkbox">
@@ -347,6 +352,7 @@
 	</footer>
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
