@@ -1,11 +1,29 @@
-.logo
 
-  
-  
+.section-title
+  text-align: center
+  text-transform: uppercase
+  font-family: $title
+  font-size: 28px
+  line-height: 1.5
+  color: #082A58
+  margin-bottom: 80px
+  img 
+    width: 230px
+
+
+// --------------------- header ------------------------------  
+
 .header
-  padding: 53px 0px 63px
-  background: radial-gradient(43.11% 325.09% at 41.47% 50%, #EBEBEB 0%, #FFFFFF 47.92%, #F0F0F0 100%)
+  position: relative
+  padding-top: 45px 
+  // background: radial-gradient(43.11% 325.09% at 41.47% 50%, #EBEBEB 0%, #FFFFFF 47.92%, #F0F0F0 100%)
+  background: #EBEBEB url('../img/header-bg-full.png') no-repeat 
+  background-position:  left 0px bottom -30px
 
+.header__plant
+  position: absolute
+  right: 0  
+  bottom: 0
 
 .header__contacts
   display: flex
@@ -35,6 +53,22 @@
 .header__contacts-ins
   background: url('../img/instagram.svg') no-repeat center
 
+.header__language 
+  position: absolute
+  right: 30px  
+  padding: 0
+  margin: 0
+  list-style: none
+  li 
+    display: inline-block
+  a 
+    font-size: 20px
+    color: #A2A2A2
+  li.active 
+    a
+      font-weight: 700
+      color: #082A58
+  
 .header__bottom
   display: flex
   justify-content: space-between
@@ -82,3 +116,601 @@
   display: flex 
   justify-content: space-between
   padding-left: 30px
+
+// --------------------- target ------------------------------
+
+.target 
+  padding: 90px 0px
+
+.target__subtitle
+  text-align: center 
+  font-size: 28px
+  color: #082A58
+  margin-bottom: 40px
+
+.target__center
+  position: relative
+  // outline: 1px solid red
+  position: relative
+  width: 740px
+  margin: 0 auto
+  margin-bottom: 40px
+
+.target__img
+  img 
+    width: 100%
+
+.target__block
+  position: absolute
+  bottom: 20px
+  right: 70px
+  width: 230px
+  img 
+    width: 100%
+
+.target__list
+  // outline: 1px solid green
+  width: 500px
+  padding: 0
+  margin: 0
+  list-style: none
+  position: absolute
+  top: 60px
+  color: #5A5A5A
+  font-weight: 700
+  li 
+    margin-bottom: 60px
+  span 
+    font-weight: 400  
+
+.target__list-left
+  transform: translateX(-60px)
+  text-align: right
+  left: 0
+  li:nth-child(1)
+    transform: translateX(-130px)
+  li:nth-child(2)
+    transform: translateX(-260px)
+  li:nth-child(3)
+    transform: translateX(-310px)
+  li:nth-child(4)
+    transform: translateX(-310px)
+  li:nth-child(5)
+    transform: translateX(-280px)
+
+.target__list-right
+  transform: translate(210px, -20px)
+  right: 0
+  li:nth-child(1)
+    transform: translateX(0px)
+    margin-bottom: 50px
+  li:nth-child(2)
+    transform: translateX(127px)
+    margin-bottom: 30px
+  li:nth-child(3)
+    transform: translateX(170px)
+  li:nth-child(4)
+    transform: translateX(180px)
+
+
+.target__row
+  position: relative
+  display: flex
+  justify-content: space-between
+  margin: 0 -33px
+
+.target__line
+  position: absolute
+  top: 83px
+  right: 0
+  width: 100%
+  height: 1px
+  background-color: #C4C4C4
+
+
+.target__item
+  width: 33.33%
+  padding: 0 33px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.target__item-img
+  position: relative
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 166px 
+  height: 166px 
+  border-radius: 50% 
+  border: 1px solid #082A58
+  margin-bottom: 24px
+  &.item-1
+    background: url('../img/target-item-1.png') no-repeat center
+    background-color: #fff
+  &.item-2
+    background: url('../img/target-item-2.png') no-repeat center
+    background-color: #fff
+  &.item-3
+    background: url('../img/target-item-3.png') no-repeat center
+    background-color: #fff
+
+.target__item-round
+  width: 146px 
+  height: 146px 
+  border-radius: 50% 
+  border: 3px solid #082A58
+
+.target__item-title
+  text-align: center
+  font-family: $title
+  font-size: 20px
+  text-transform: uppercase
+  color: #FA3134
+  margin-bottom: 5px
+
+.target__item-text 
+  color: #000
+  text-align: center
+
+.target__item-mark
+  color: #000
+  text-align: center
+  font-weight: bold
+
+// --------------------- effect ------------------------------
+
+.effect
+  position: relative
+  padding: 120px 0px
+  background-color: #EBEBEB
+
+.effect__top
+  display: flex
+  justify-content: space-between 
+  align-items: center
+
+.effect__plant
+  position: absolute
+  &.top 
+    top: 0
+    right: 0
+  &.bottom 
+    bottom: 100px
+    left: 0
+
+.effect__top-left,
+.effect__top-right 
+  width: 180px
+  font-family: $title
+  font-size: 30px
+  color: #FA3134
+
+.effect__top-left
+  text-align: right
+
+.effect__top-right 
+  text-align: left
+
+.effect__arrow-wrap
+  width: 185px
+  img 
+    width: 100%
+  
+
+.target__counter
+  position: relative
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 166px 
+  height: 166px 
+  border-radius: 50% 
+  border: 1px solid #082A58
+
+.target__counter-round
+  width: 146px 
+  height: 146px 
+  border-radius: 50% 
+  border: 3px solid #082A58
+
+.target__counter-number
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  font-family: $title
+  font-size: 80px
+  color: #FA3134 
+
+.effect__bottom
+  display: flex
+  justify-content: space-between
+  
+.effect__list
+  width: 280px
+  padding: 0
+  margin: 0
+  list-style: none
+  // outline: 1px solid green
+  li 
+    position: relative
+    cursor: pointer
+    margin-bottom: 73px
+  li:last-child 
+    margin-bottom: 0
+  span
+    display: block
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: radial-gradient(122% 122% at 12% 20%, #3665A4 2.08%, #254583 48.44%, #2459A0 95.83%)
+    &::after 
+      position: absolute
+      content: ''
+      top: -7px
+      left: -7px
+      width: 24px
+      height: 24px
+      border-radius: 50%
+      border: 1px solid #254583
+      transform: scale(0)
+      transition: .2s
+  li:hover 
+    font-weight: 700
+    span::after
+      transform: scale(1)
+    &::after 
+      transform: scale(1.1)
+
+.effect__list.left 
+  text-align: right
+  li
+    padding-right: 95px
+  span 
+    right: 0
+  li::after 
+    position: absolute
+    content: ''
+    bottom: -13px
+    right: 20px
+    width: 60px
+    height: 70px
+    background-repeat: no-repeat
+    background-position: center
+    transition: .3s
+  li:nth-child(1)::after
+    background-image: url('../img/effect-1.png')
+  li:nth-child(2)::after
+    background-image: url('../img/effect-2.png')
+  li:nth-child(3)::after
+    background-image: url('../img/effect-3.png')
+  li:nth-child(4)::after
+    background-image: url('../img/effect-4.png')
+  li:nth-child(5)::after
+    background-image: url('../img/effect-5.png')
+  li:nth-child(6)::after
+    background-image: url('../img/effect-6.png')
+  li:nth-child(7)::after
+    background-image: url('../img/effect-7.png')
+  li:nth-child(8)::after
+    background-image: url('../img/effect-8.png')
+
+.effect__list.right
+  text-align: left
+  width: 230px
+  li
+    padding-left: 30px
+  span 
+    left: 0
+      
+
+
+.effect__bottom-img
+  margin-top: 30px
+  width: 620px
+  transform: translateX(20px)
+  img 
+    width: 100%
+
+// --------------------- prevention ------------------------------
+.prevention
+  padding: 100px 0px
+
+.prevention__top
+  max-width: 1000px
+  margin: 0 auto
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 100px
+  
+
+.prevention__list
+  width: 430px
+  padding: 0
+  margin: 0
+  list-style: none
+  li 
+    position: relative
+    cursor: pointer
+    margin-bottom: 34px
+    padding-left: 30px
+  li:last-child 
+    margin-bottom: 0
+  span
+    display: block
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: radial-gradient(122% 122% at 12% 20%, #3665A4 2.08%, #254583 48.44%, #2459A0 95.83%)
+    &::after 
+      position: absolute
+      content: ''
+      top: -7px
+      left: -7px
+      width: 24px
+      height: 24px
+      border-radius: 50%
+      border: 1px solid #254583
+      transform: scale(0)
+      transition: .2s
+  li:hover 
+    font-weight: 700
+    span::after
+      transform: scale(1)
+    &::after 
+      transform: scale(1.1)
+
+
+.prevention__bottom
+  position: relative
+  display: flex
+  justify-content: flex-end
+
+.prevention__bottom-left
+  position: absolute
+  left: -240px
+  top: -130px
+
+
+.prevention__bottom-right
+  flex-shrink: 0
+  width: 675px
+
+.prevention__head
+  display: flex 
+  justify-content: space-between
+  align-items: center
+  max-width: 560px
+  margin: 0 auto
+  margin-bottom: 35px
+
+.prevention__head-title
+  font-size: 20
+  font-family: $title
+  color: #FA3134
+  img 
+    width: 170px
+
+.prevention__subtitle
+  color: #082A58
+  margin-bottom: 35px
+
+.prevention__table
+  color: #082A58
+  width: 100%
+  font-size: 16px
+
+.prevention__table-row
+  display: flex
+  border-top: 1px solid #C4C4C4
+  &:last-child
+    border-bottom: 1px solid #C4C4C4
+
+.prevention__table-col
+  color: #082A58
+  width: 50%
+  padding: 17px
+  &:first-child 
+    padding-left: 30px
+    font-weight: 600
+    border-right: 1px solid #C4C4C4
+  &:last-child 
+    text-align: center
+  
+
+// --------------------- health ------------------------------
+.health 
+  position: relative
+  padding: 100px 0px
+  background-color: #EBEBEB
+
+.health__plant
+  position: absolute
+  left: 0
+  bottom: 30px
+
+.health__buttons
+  position: relative
+  width: 820px 
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  margin-bottom: 80px
+  &::after 
+    position: absolute
+    content: ""
+    top: 35px
+    left: 0px 
+    right: 0px
+    height: 1px 
+    background-color: #C4C4C4
+
+.health__btn
+  position: relative
+  z-index: 1
+  .button 
+    background-color: #EBEBEB
+  &.active 
+    .button 
+      border: 1px solid #000
+      background: radial-gradient(122% 122% at 12% 20%, #3665A4 2.08%, #254583 48.44%, #2459A0 95.83%)
+      color: #fff
+      cursor: default
+
+
+.health__item
+  color: #082A58
+
+.health__item-top
+  display: flex
+  margin-bottom: 50px
+
+
+.health__item-tab
+  font-family: $title
+  font-size: 20px 
+  color: #C4C4C4
+  text-decoration: underline
+  text-transform: uppercase
+  margin-right: 56px
+  cursor: pointer
+  &:last-cild 
+    margin-right: 0
+  &:hover 
+    color: #fa313496
+  &.active 
+    color: #FA3134
+    text-decoration: none
+    cursor: default
+  
+
+.health__subtitle
+  font-weight: 700
+  margin-bottom: 27px
+
+.health__list
+  padding: 0
+  margin: 0
+  padding-left: 25px
+  li 
+    margin-bottom: 24px
+  li:last-child 
+    margin-bottom: 
+  img 
+    width: 130px
+
+// --------------------- contact ------------------------------
+
+.contact
+  padding: 60px 0px 
+  background: url('../img/contact-bg.png') no-repeat
+  background-position: 190px 110px
+
+.contact__row
+  display: flex
+  justify-content: space-between
+
+.contact__left
+  width: 360px
+  margin-right: 30px
+
+.contact__btn
+  text-align: center
+
+.contact__right
+  width: 760px
+  margin-right: 20px
+  margin-top: 30px
+
+.contact__title
+  text-transform: uppercase
+  font-family: $title 
+  font-size: 20px
+  color: #FA3134
+
+.contact__subtitle
+  font-family: $title 
+  font-size: 20px
+  color: #FA3134
+  margin-bottom: 30px
+
+.contact__form-title
+  font-weight: 700
+  font-size: 20px
+  color: #082A58
+  margin-bottom: 54px
+
+.contact__form-row
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 48px
+
+.contact__form-item
+  width: 200px
+  border: none
+  outline: none
+  border-radius: 60px
+  padding: 24px 30px
+  background-color: #F8F8F8
+  margin-right: 18px
+  &::placeholder 
+    color: rgba(86, 87, 90, 0.5)
+    font-weight: 700
+
+input.button 
+  padding: 24px 30px
+
+.contact__form-checkbox-wrap
+  display: flex
+  align-items: center
+  margin-bottom: 34px
+  input
+    cursor: pointer
+  label 
+    font-size: 12px
+    cursor: pointer
+    padding-left: 10px
+
+.contact__phone
+  color: #082A58
+  a 
+    font-weight: 700
+    color: #FA3134
+  
+// --------------------- footer ------------------------------
+
+.footer 
+  padding: 50px 0px
+  background: radial-gradient(122% 122% at 12% 20%, #3665A4 2.08%, #254583 48.44%, #2459A0 95.83%)
+
+.footer__img
+  margin-bottom: 30px
+
+.footer__text
+  color: rgba(255, 255, 255, 0.8)
+  margin-bottom: 40px
+  font-size: 14px
+  a 
+    color: #fff
+    font-weight: 700
+
+.footer__links
+  display: flex
+  justify-content: center
+  a 
+    margin-right: 80px
+    text-decoration: underline
+    color: #fff
+    font-weight: 700
+  a:last-child 
+    margin-right: 0
