@@ -73,15 +73,22 @@
 
 	<section class="target">
 		<div class="container">
-			<div class="section-title wow fadeInDown" data-wow-delay="2s">
+			<div class="section-title wow fadeInDown">
 				<img src="img/logo.svg" alt="Тутукон"> - НОВИЙ ПІДХІД В ЛІКУВАННІ ТА ПРОФІЛАКТИЦІ Сечокам’яної хвороби  та інфекцій сечовивідних шляхів
 			</div>
 			<div class="target__subtitle">Допоможе впоратися з такими проблемами:</div>
 			<div class="target__center">
-				<div class="target__img  wow zoomIn">
-					<img src="img/target-center.png" alt="Тутукон">
+
+				<div class="target__img">
+					<img class="target__full" src="img/target-img.png" alt="Тутукон">
+					<div class="target__wrap">
+						<div class="target__round wow zoomIn"><img src="img/target-round.png" alt="Тутукон"></div>
+						<div class="target__border wow zoomIn" data-wow-duration="1.5s"></div>
+						<div class="target__thin  wow rotateIn" data-wow-duration="2s"><img src="img/target-thin.png" alt="Тутукон"></div>
+					</div>
 				</div>
-				<div class="target__block wow zoomInRight" data-wow-duration="2s" data-wow-delay="2s">
+
+				<div class="target__block wow zoomInRight" data-wow-duration="2s" data-wow-delay="1s">
 					<img src="img/target-block.png" alt="Тутукон">
 				</div>
 				<ul class="target__list target__list-left">
@@ -129,7 +136,7 @@
 					<div class="target__item-mark">Безпечна при діабеті, <br>
 						для дітей та вагітних</div>
 				</div>
-				<div class="target__line wow slideInLeft" data-wow-duration="3s"></div>
+				<div class="target__line wow slideInLeft" data-wow-duration="3s"  data-wow-offset="80"></div>
 			</div>
 		</div>
 	</section>
@@ -151,7 +158,7 @@
 					<img src="img/effect-arrow-left.svg" alt="Тутукон" class="wow slideInLeft" data-wow-duration="4s">
 				</div>
 				<div class="effect__top-mid">
-					<div class="target__counter">
+					<div class="target__counter" id="counter">
 						<div class="target__counter-thin wow zoomIn" data-wow-duration="2s"></div>
 						<div class="target__counter-round wow rotateIn" data-wow-duration="2s"></div>
 						<div class="target__counter-number">1</div>
@@ -165,26 +172,26 @@
 			<div class="effect__bottom">
 				<ul class="effect__list left">
 					<li class="wow fadeInLeft">Хвощ польовий<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay=".5s">Торичник червоний<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay=".6s">Болдо листя<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay=".7s">Опунція інжирова<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay=".8s">Залізниця вузьколиста<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay=".9s">Розмарин аптечний<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay="1s">Бермудська трава<span></span></li>
-					<li class="wow fadeInLeft" data-wow-delay="1.1s">Меліса аптечна<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".5s" data-wow-offset="0">Торичник червоний<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".6s" data-wow-offset="0">Болдо листя<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".7s" data-wow-offset="0">Опунція інжирова<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".8s" data-wow-offset="0">Залізниця вузьколиста<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay=".9s" data-wow-offset="0">Розмарин аптечний<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay="1s" data-wow-offset="0">Бермудська трава<span></span></li>
+					<li class="wow fadeInLeft" data-wow-delay="1.1s" data-wow-offset="0">Меліса аптечна<span></span></li>
 				</ul>
 				<div class="effect__bottom-img">
 					<img src="img/effect-img.png" alt="Тутукон">
 				</div>
 				<ul class="effect__list right">
-					<li class="wow fadeInRight" data-wow-delay="0s">Літолітичний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay=".5s">Протизапальний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay=".6s">Діуретичний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay=".7s">Антибактеріальний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay=".8s">Спазмолітичний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay=".9s">Антиоксидантний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay="1s">Антитоксичний<span></span></li>
-					<li class="wow fadeInRight" data-wow-delay="1.1s">Нефропротекторний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="0s" data-wow-offset="0">Літолітичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".5s" data-wow-offset="0">Протизапальний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".6s" data-wow-offset="0">Діуретичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".7s" data-wow-offset="0">Антибактеріальний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".8s" data-wow-offset="0">Спазмолітичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay=".9s" data-wow-offset="0">Антиоксидантний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="1s" data-wow-offset="0">Антитоксичний<span></span></li>
+					<li class="wow fadeInRight" data-wow-delay="1.1s" data-wow-offset="0">Нефропротекторний<span></span></li>
 
 				</ul>
 			</div>
@@ -219,10 +226,15 @@
 			<div class="prevention__bottom">
 				<div class="prevention__bottom-left">
 					<div class="target__center">
-						<div class="target__img wow zoomIn">
-							<img src="img/target-center.png" alt="Тутукон">
+						<div class="target__img">
+							<img class="target__full" src="img/target-img.png" alt="Тутукон">
+							<div class="target__wrap">
+								<div class="target__round wow zoomIn" data-wow-duration="1.5s"><img src="img/target-round.png" alt="Тутукон"></div>
+								<div class="target__border wow zoomIn" data-wow-duration="2s"></div>
+								<div class="target__thin  wow rotateIn" data-wow-duration="3s"><img src="img/target-thin.png" alt="Тутукон"></div>
+							</div>
 						</div>
-						<div class="target__block wow zoomInRight"  data-wow-duration="2s">
+						<div class="target__block wow zoomInRight"  data-wow-duration="2s"  data-wow-delay="1s">
 							<img src="img/target-block.png" alt="Тутукон">
 						</div>
 					</div>
@@ -268,18 +280,133 @@
 			<div class="section-title  wow fadeInDown">
 				<img src="img/logo.svg" alt="Тутукон"> - ДЛЯ ТИХ, ХТО ПІКЛУЄТЬСЯ ПРО СВОЄ ЗДОРОВ’Я
 			</div>
+
 			<div class="health__buttons">
-				<div class="health__btn  wow zoomIn"><button class="button" type="button">Про хворобу</button></div>
-				<div class="health__btn  wow zoomIn" data-wow-delay="0.5s"><button class="button" type="button">Симптомы</button></div>
-				<div class="health__btn  wow zoomIn active" data-wow-delay="1s"><button class="button" type="button">Профілактика</button></div>
-			</div>
-			<div class="health__item">
-				<div class="health__item-top">
-					<div class="health__item-tab">СЕЧОКАМ’ЯНА ХВОРОБА</div>
-					<div class="health__item-tab active">Інфекції Сечовивідних шляхів</div>
+				<div class="health__btn  wow zoomIn active"  data-num="1">
+					<button class="button" type="button">Про хворобу</button>
 				</div>
-				<div class="health__item-content">
-					<div class="health__subtitle">Загальні поради при інфекції сечовивідних шляхів:</div>
+				<div class="health__btn  wow zoomIn" data-wow-delay="0.5s" data-num="2">
+					<button class="button" type="button">Симптомы</button>
+				</div>
+				<div class="health__btn  wow zoomIn" data-wow-delay="1s" data-num="3">
+					<button class="button" type="button">Профілактика</button>
+				</div>
+			</div>
+
+			<!-- ----------------------- Про хворобу ------------------------------- -->
+
+			<div class="health__item active" data-num="1">
+
+				<div class="health__item-top">
+					<div class="health__item-tab" data-num="1">СЕЧОКАМ’ЯНА ХВОРОБА</div>
+					<div class="health__item-tab active" data-num="2">Інфекції Сечовивідних шляхів</div>
+				</div>
+
+				<div class="health__item-content"  data-num="1">
+					<ul class="health__list height">
+						<li>Пийте достатню кількість води</li>
+						<li>Скоротіть споживання солі</li>
+						<li>Підтримуйте здорову масу вагу  тіла</li>
+						<li>Обмежте споживання вживання алкоголю</li>
+						<li>Уникайте надмірного споживання кофеїну</li>
+						<li>Уникайте вживання солодких напоїв</li>
+						<li>Додайте в своє життя фізичну активність</li>
+						<li>Регулярно проходьте профілактичні огляди</li>
+					</ul>
+					<div class="health__img"><img src="img/health-img.png" alt="1"></div>
+				</div>
+
+				<div class="health__item-content active"  data-num="2">
+					<div class="health__text">В окремих вікових груп та особливо в період вагітності інфекції сечовивідних шляхів мають певні відмінності.</div>
+					<div class="health__subtitle">1-2! Серед дорослих, у віці до 50 років, інфекції найбільш розповсюджені серед жінок:</div>
+					<ul class="health__list vertical">
+						<li>цистит - запалення в сечового міхуру</li>
+						<li>пієлонефрит - запалення тканин нирки</li>
+					</ul>
+					<div class="health__subtitle">У чоловіків, у віці до 50 років:</div>
+					<ul class="health__list vertical">
+						<li>уретрит - запалення сечовивідного канал</li>
+						<li>простатит - запалення простати</li>
+					</ul>
+					<div class="health__subtitle">Серед дітей, до 18 років, більш розповсюджені уретрит і цистит.</div>
+					<div class="health__subtitle">У жінок в період вагітності достатньо розповсюдженими є:</div>
+					<ul class="health__list vertical">
+						<li>безсимптомна бактеріурія</li>
+						<li>гострий цистит</li>
+						<li>гострий пієлонефрит</li>
+					</ul>
+					<div class="health__text">Всі інфекції сечовивідних шляхів під час вагітності є суттєвою загрозою для вагітної та дитини. Найбільш прихованою і тому дуже небезпечною є безсимптомна бактеріурія, що насамперед загрожує бактеріальному ураженню новонародженої дитини, та за певних причин провокувати гострий цистит або пієлонефрит вагітної.</div>
+				</div>
+			</div>
+
+			<!-- ----------------------- Симптомы ------------------------------- -->
+
+			<div class="health__item" data-num="2">
+
+				<div class="health__item-top">
+					<div class="health__item-tab" data-num="1">СЕЧОКАМ’ЯНА ХВОРОБА</div>
+					<div class="health__item-tab active" data-num="2">Інфекції Сечовивідних шляхів</div>
+				</div>
+
+				<div class="health__item-content"  data-num="1">
+					<ul class="health__list height">
+						<li>Пийте достатню кількість води</li>
+						<li>Скоротіть споживання солі</li>
+						<li>Підтримуйте здорову масу вагу  тіла</li>
+						<li>Обмежте споживання вживання алкоголю</li>
+						<li>Уникайте надмірного споживання кофеїну</li>
+						<li>Уникайте вживання солодких напоїв</li>
+						<li>Додайте в своє життя фізичну активність</li>
+						<li>Регулярно проходьте профілактичні огляди</li>
+					</ul>
+					<div class="health__img"><img src="img/health-img.png" alt="1"></div>
+				</div>
+				
+				<div class="health__item-content active"  data-num="2">
+					<div class="health__subtitle">2-2! Загалом, у дорослих, певна локалізація запального процесу має наступні прояви:</div>
+					<ul class="health__list">
+						<li>уретрит - затруднені або болісні сечовипускання та специфічні виділення з уретри</li>
+						<li>цистит - багаторазові, болісні сечовипускання протягом дня або ночі, печіння, біль внизу живота, сеча мутна і з домішками крові,
+							лихоманка</li>
+						<li>пієлонефрит - часте, утруднене або болісне сечовипускання, кров у сечі, біль у ділянці попереку, лихоманка</li>
+					</ul>
+					<div class="health__subtitle">У дітей прояви менш помітні і відповідно більш складно визначити локалізацію інфекції.</div>
+					<div class="health__subtitle">У жінок в період вагітності:</div>
+					<ul class="health__list">
+						<li>безсимптомна бактеріурія - може бути виявлена лише при лабораторних дослідженняхзатруднені або болісні сечовипускання
+							та специфічні виділення з уретри</li>
+						<li>гострий цистит - біль внизу живота, лихоманка, багаторазові, болісні сечовипускання протягом дня або ночі, печіння, сеча мутна
+							із домішками крові</li>
+						<li>гострий пієлонефрит - біль у ділянці попереку, лихоманка, часте, утруднене або болісне сечовипускання, кров у сечі</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ----------------------- Профілактика ------------------------------- -->
+
+			<div class="health__item" data-num="3">
+
+				<div class="health__item-top">
+					<div class="health__item-tab" data-num="1">СЕЧОКАМ’ЯНА ХВОРОБА</div>
+					<div class="health__item-tab active" data-num="2">Інфекції Сечовивідних шляхів</div>
+				</div>
+
+				<div class="health__item-content"  data-num="1">
+					<ul class="health__list height">
+						<li>Пийте достатню кількість води</li>
+						<li>Скоротіть споживання солі</li>
+						<li>Підтримуйте здорову масу вагу  тіла</li>
+						<li>Обмежте споживання вживання алкоголю</li>
+						<li>Уникайте надмірного споживання кофеїну</li>
+						<li>Уникайте вживання солодких напоїв</li>
+						<li>Додайте в своє життя фізичну активність</li>
+						<li>Регулярно проходьте профілактичні огляди</li>
+					</ul>
+					<div class="health__img"><img src="img/health-img.png" alt="1"></div>
+				</div>
+				
+				<div class="health__item-content active"  data-num="2">
+					<div class="health__subtitle">3-2! Загальні поради при інфекції сечовивідних шляхів:</div>
 					<ul class="health__list">
 						<li>дієта: необхідно виключити гострі, солоні, жирні продукти</li>
 						<li>водно-питний режим: випивати мінімум півтора літра рідини на день</li>
@@ -295,6 +422,10 @@
 					</ul>
 				</div>
 			</div>
+
+			
+
+			
 		</div>
 	</section>
 
@@ -306,7 +437,7 @@
 					<div class="contact__img">
 						<img src="img/header-img.png" alt="Тутукон">
 					</div>
-					<div class="contact__btn wow zoomIn">
+					<div class="contact__btn wow jackInTheBox">
 						<a href="#" class="button">Придбати on-line</a>
 					</div>
 				</div>
@@ -317,10 +448,10 @@
 					<form action="#" class="contact__form">
 						<div class="contact__form-row">
 							<div class="contact__form-inputs">
-								<input type="text" class="contact__form-item wow zoomIn"  placeholder="Ваше ім’я" data-wow-delay="1.5s">
-								<input type="tel" class="contact__form-item wow zoomIn" placeholder="+380 _ _ _ _ _ _ _ _ _" data-wow-delay="1s">
+								<input type="text" class="contact__form-item wow zoomIn"  placeholder="Ваше ім’я" data-wow-delay="0.6s">
+								<input type="tel" class="contact__form-item wow zoomIn" placeholder="+380 _ _ _ _ _ _ _ _ _" data-wow-delay="0.4s">
 							</div>
-							<input type="submit" class="button wow zoomIn" value="Замовити консультацію"  data-wow-delay="0.5s">
+							<input type="submit" class="button wow zoomIn" value="Замовити консультацію"  data-wow-delay="0.2s">
 						</div>
 						<div class="contact__form-checkbox-wrap">
 							<input id="check-agree" type="checkbox">
@@ -353,6 +484,7 @@
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/noframework.waypoints.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

@@ -14,11 +14,11 @@
 // --------------------- header ------------------------------  
 
 .header
+  height: 100vh
   position: relative
   padding-top: 45px 
-  // background: radial-gradient(43.11% 325.09% at 41.47% 50%, #EBEBEB 0%, #FFFFFF 47.92%, #F0F0F0 100%)
-  background: #EBEBEB url('../img/header-bg-full.png') no-repeat 
-  background-position:  left 0px bottom -30px
+  background: #EBEBEB url('../img/header-bg-big.png') no-repeat 
+  background-position:  left -280px bottom -30px
 
 .header__plant
   position: absolute
@@ -79,6 +79,7 @@
 .header__bottom-img
   width: 100%
   text-align: center
+  transform: translateY(200px)
 
 .header__bottom-img-text
   display: inline-block
@@ -137,8 +138,40 @@
   margin-bottom: 40px
 
 .target__img
-  img 
-    width: 100%
+  position: relative
+  transform: translateX(-20px)
+.target__full 
+  position: relative
+  // z-index: 1
+  width: 100%
+.target__wrap
+  position: absolute
+  width: 460px
+  height: 460px
+  z-index: -1
+  top: 80px
+  left: 170px
+.target__thin
+  position: absolute
+  top: 0
+  left: 0
+.target__round
+  position: absolute
+  z-index: 2
+  top: 25px
+  left: 25px
+.target__border
+  position: absolute
+  z-index: 1
+  top: 16px
+  left: 14px
+  width: 430px
+  height: 430px
+  border-radius: 50%
+  border: 5px solid #3665A4
+
+
+
 
 .target__block
   position: absolute
@@ -287,7 +320,7 @@
 .effect
   position: relative
   padding: 120px 0px
-  background-color: #EBEBEB
+  background: radial-gradient(164.65% 609.5% at 11.85% 16.59%, #EBEBEB 0%, #FFFFFF 49.49%, #EEEEEE 100%)
 
 .effect__top
   display: flex
@@ -469,6 +502,8 @@
   padding: 100px 0px
 
 .prevention__top
+  position: relative
+  z-index: 1
   max-width: 1000px
   margin: 0 auto
   display: flex 
@@ -576,9 +611,10 @@
 
 // --------------------- health ------------------------------
 .health 
+  height: 1060px
   position: relative
   padding: 100px 0px
-  background-color: #EBEBEB
+  background: radial-gradient(164.65% 609.5% at 11.85% 16.59%, #EBEBEB 0%, #FFFFFF 49.49%, #EEEEEE 100%)
 
 .health__plant
   position: absolute
@@ -596,8 +632,8 @@
     position: absolute
     content: ""
     top: 35px
-    left: 0px 
-    right: 0px
+    left: 100px 
+    right: 100px
     height: 1px 
     background-color: #C4C4C4
 
@@ -605,7 +641,7 @@
   position: relative
   z-index: 1
   .button 
-    background-color: #EBEBEB
+    background-color: #f3f3f3
   &.active 
     .button 
       border: 1px solid #000
@@ -615,7 +651,10 @@
 
 
 .health__item
+  display: none
   color: #082A58
+  &.active 
+    display: block
 
 .health__item-top
   display: flex
@@ -638,7 +677,12 @@
     color: #FA3134
     text-decoration: none
     cursor: default
-  
+
+.health__item-content
+  position: relative
+  display: none
+  &.active 
+    display: block
 
 .health__subtitle
   font-weight: 700
@@ -648,12 +692,39 @@
   padding: 0
   margin: 0
   padding-left: 25px
+  margin-bottom: 27px
   li 
     margin-bottom: 24px
   li:last-child 
-    margin-bottom: 
+    margin-bottom: 0
   img 
     width: 130px
+.health__list.vertical 
+  display: flex
+  li 
+    margin-left: 70px
+    margin-bottom: 0
+  li:first-child 
+    margin-left: 0
+.health__list.height 
+  li 
+    margin-bottom: 47px
+  li:last-child 
+    margin-bottom: 0
+  
+
+.health__text
+  font-size: 18px
+  line-height: 1.5
+  margin-bottom: 27px
+
+.health__img
+  width: 610px
+  position: absolute
+  top: 0
+  right: 0
+  img 
+    width: 100%
 
 // --------------------- contact ------------------------------
 
