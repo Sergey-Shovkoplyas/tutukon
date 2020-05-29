@@ -6,12 +6,22 @@ $(document).ready(function () {
 			boxClass:     'wow',      // default
 			animateClass: 'animated', // default
 			offset:       200,          // default
-			mobile:       true,       // default
+			mobile:       false,       // default
 			live:         true        // default
 		}
 		)
 		wow.init();
 
+
+	// ------------------ scroll to form -------------------------
+
+	let $contactBox = $('.contact')
+
+	$('#toFormBtn').on('click', function(){
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $contactBox.offset().top
+	}, 2000);
+	});
 
 	// ------------------ counter -------------------------
 
@@ -57,6 +67,13 @@ $(document).ready(function () {
 		$($container).find('.health__item-content').not(text).removeClass('active');
 		$(text).addClass('active');
 	});
+
+	// ------------------ popup -------------------------
+
+	$('.popup__close, .overlay').on('click', function(){
+		$('body').removeClass('overlay');
+		$('.popup').removeClass('active');
+	})
 
 
 

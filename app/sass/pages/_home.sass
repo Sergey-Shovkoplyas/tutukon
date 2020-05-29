@@ -255,7 +255,6 @@
 
 .target__center
   position: relative
-  // outline: 1px solid red
   position: relative
   width: 740px
   margin: 0 auto
@@ -263,7 +262,7 @@
   +media-md 
     margin-bottom: 50px
   +media-sm 
-    // width: 100%
+    width: 100%
 
 .target__img-wrap
   +media-md 
@@ -1190,3 +1189,118 @@ input.button
       margin: 0 auto
       margin-bottom: 15px
       
+
+// ------------------- popup ----------------------------
+
+.overlay 
+  overflow: hidden
+  cursor: pointer
+  &::after
+    content: ""
+    position: fixed
+    z-index: 100
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(196, 196, 196, 0.7)
+
+
+.popup 
+  display: none
+  cursor: default
+  position: fixed
+  z-index: 200
+  top: 120px
+  left: 50%
+  transform: translate(-50%, 0)
+  width: 960px
+  height: 590px
+  padding: 40px
+  background-color: #fff
+  &.active 
+    display: block
+  +media-md 
+    width: 720px
+  +media-sm 
+    top: 15px
+    width: 330px
+    padding: 20px
+    height: auto
+  +media-374  
+    width: 290px
+
+.popup__title
+  color: #FA3134
+  font-size: 40px 
+  font-family: $title
+  text-align: center
+  span
+    font-size: 80px 
+    padding-left: 25px
+  +media-sm 
+    font-size: 28px
+    span 
+      display: block
+      text-align: center
+      font-size: 50px
+      padding-left: 0px
+
+.popup__subtitle
+  color: #082A58
+  font-size: 28px 
+  font-family: $title
+  text-align: center
+  +media-sm 
+    font-size: 22px
+
+.popup__row
+  display: flex
+  justify-content: space-between
+  img 
+    width: 100%
+  +media-sm 
+    flex-direction: column
+
+.popup__right
+  padding-top: 40px
+  margin-left: 20px
+
+.popup__left,
+.popup__right
+  +media-sm 
+    width: 180px
+    margin: 0 auto
+    padding-top: 0px
+    &.popup__right
+      width: 150px
+
+.popup__close
+  // outline: 1px solid red
+  position: absolute
+  top: 34px
+  right: 34px
+  width: 35px 
+  height: 35px
+  cursor: pointer
+  &::before, 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100% 
+    height: 3px 
+    background-color: #C4C4C4
+  &::before 
+    transform: translate(-50%, -50%) rotate(45deg)
+  &::after
+    transform: translate(-50%, -50%) rotate(-45deg)
+  +media-sm   
+    top: 15px
+    right: 15px
+    width: 25px 
+    height: 25px
+  
+  

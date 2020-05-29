@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
-<body class="mCustomScrollbar" data-mcs-theme="dark"> 
+<body class="overlay"> 
 
 	<header class="header">
 		<div class="header__plant">
@@ -66,7 +66,7 @@
 					<div class="header__title-3">Сучасний комплексний рослинний препарат</div>
 					<div class="header__buttons">
 						<div class="header__btn wow zoomIn"><a href="#" class="button">Де придбати</a></div>
-						<div class="header__btn wow zoomIn" data-wow-delay="0.5s"><a href="#" class="button">Консультація з лікарем</a></div>
+						<div class="header__btn wow zoomIn" data-wow-delay="0.5s"><a id="toFormBtn" class="button">Консультація з лікарем</a></div>
 					</div>
 				</div>
 			</div>
@@ -487,11 +487,24 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
+
+<div class="popup active">
+	<div class="popup__close"></div>
+	<div class="popup__title">
+		<div class="popup__title">ВИГІДНА ПРОПОЗИЦІЯ! <span>3 + 1</span></div>
+	</div>
+	<div class="popup__subtitle">Платиш за 3, отримуєш 4</div>
+	<div class="popup__row">
+		<div class="popup__left"><img src="img/popup-1.png" alt="1"></div>
+		<div class="popup__right"><img src="img/popup-2.png" alt="2"></div>
+	</div>
+</div>
+
 </html> 
