@@ -12,6 +12,7 @@ $(document).ready(function () {
 		)
 		wow.init();
 
+
 	// ------------------ counter -------------------------
 
 	var waypoint = new Waypoint({
