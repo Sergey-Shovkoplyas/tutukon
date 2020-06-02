@@ -57,6 +57,20 @@ $(document).ready(function () {
 	});
 
 	$('.health__item-tab').on('click', function () {
+		let dataNum = +$(this).attr('data-num');
+		console.log(dataNum );
+
+		$('.health__item-tab, .health__item-content').removeClass('active');
+		$('.health__item-tab, .health__item-content').each(function(){
+			let itemNum = +$(this).attr('data-num');
+			if ( itemNum ===  dataNum ) {
+				$(this).addClass('active');
+			}
+		});
+
+	});
+
+	/* $('.health__item-tab').on('click', function () {
 		let $container = $(this).parents('.health__item');
 
 		$(this).addClass('active');
@@ -66,7 +80,7 @@ $(document).ready(function () {
 		let text = $($container).find('.health__item-content')[num];
 		$($container).find('.health__item-content').not(text).removeClass('active');
 		$(text).addClass('active');
-	});
+	}); */
 
 	// ------------------ popup -------------------------
 
